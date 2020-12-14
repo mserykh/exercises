@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.15;
+}
+
+body {
+    background-color: #647df9;
+}
+
+section {
+    margin: auto 0;
+}
+
+.pricing {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 3em;
+}
+
+.pricing-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+    flex: 0 1 330px;
+    margin: 1em;
+    color: #84697c;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rbba(46, 59, 125, 0.23);
+}
+
+.pricing-card__header {
+    background-color: rgba(76, 70, 101, 0.99);
+    border-radius: 10px 10px 0 0;
+    padding: 4em 0 9em;
+    color: #fff;
+    position: relative;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+}
+
+.layer {
+    transition: transform 0.5s;
+}
+
+.pricing-card:hover .waves-__layer1 {
+    transform: translate3d(15px, 0, 0);
+}
+
+.pricing-card:hover .waves-__layer2 {
+    transform: translate3d(-15px, 0, 0);
+}
+
+.pricing-card__price {
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.pricing-card__currence {
+    font-size: 0.25em;
+    vertical-align: top;
+}
+
+.pricing-card__period {
+    font-size: 0.25em;
+    padding: 0 0 0 0.5em;
+    font-style: italic;
+}
+
+.pricing-card__title{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+}
+
+.pricing-card__features-list {
+    padding: 0 0 2em 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+
+.pricing-card__features-item {
+    padding: 1em 0;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pricing-card__button {
+    margin: auto 3em 2em 3em;
+    padding: 1em 2em;
+    background: #4d4766;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+}
+
+.pricing-card__button {
+    outline: none;
+    transition: transform 0.5s;
+}
+
+.pricing-card:hover .pricing-card__button {
+    background-color: #000;
+    transform: translate(3px, -3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
