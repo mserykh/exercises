@@ -10,7 +10,6 @@ let greetings = () => "Hello World";
 let message = greetings();
 console.log(message);
 
-
 /*
 let greet = function greeting(name) {
     return "Hello " + name;
