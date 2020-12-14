@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-weight: 400;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, button {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*::selection {
+    background-color:  rgb(3, 241, 197);
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(31, 32, 41);
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding: 120px 0
+}
+
+.container {
+    margin: 0 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title {
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgb(149, 165, 166);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    box-shadow: inset 0 -0.1rem rgb(3, 241, 197);
+}
+
+
+.phrase {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+}
+
+.toggle {
+    display: flex;
+    justify-content: center;
+}
+
+.monthly, .yearly {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.monthly {
+    background-color: rgb(3, 241, 197);
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+}
+
+.yearly {
+    background-color: rgb(240, 239, 243);
+    border-radius: 0 5px 5px 0;
+    color: rgb(52, 58, 64);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.discount {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    color: rgb(52, 58, 64);
+}
+
+.business-pricing {
+    background-color: rgb(3, 241, 197);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: -2rem;
+}
+
+.price {
+    font-size: 2.25rem;
+    font-weight: 900;
+    margin-bottom: 1.75rem;
+}
+
+sup {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.price-type {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.pricing-btn {
+    color: #fff;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background-color: rgb(84, 217, 140);
+    height: 160px;
+    transition: background-color 250ms ease-in-out;
+    width: 100%;
+}
+
+.pricing-btn:hover {
+    background-color: rgb(31, 32, 41);
+}
+
+.business-features {
+    background-color: rgb(240, 239, 243);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+p.feature-item {
+    color: rgb(149, 165, 166);
+    margin-bottom: 0.8rem;
+    font-size: 0.85rem;
+}
+
+p.feature-item:last-of-type {
+    margin-bottom: 0;
+}
+
+h4.package-type {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        margin: 0 1rem;
+    }
+    .card {
+        flex-direction: row;
+        /* justify-content: center; */
+        margin-top: 2rem;
+        position: relative;
+        background-color: rgb(240, 239, 243);
+    }
+
+    .discount {
+        position: absolute;
+        width: 100%;
+        margin-top: -2rem;
+    }
+
+    .container-price-btn {
+        width: 250px;
+    }
+
+    .business-pricing {
+        margin-top: 0;
+    }
+
+    .business-features {
+        flex: 3 1;
+        text-align: left;
+        padding-left: 2rem;
+        align-self: center;
+    }
+}
+
+
+@media (min-width: 960px) {
+
+    .wrapper {
+        padding: 0 0;
+    }
+
+    .container {
+        flex-direction: row;
+        align-items: center;
+        margin: 0 1rem;
+    }
+
+    .description {
+        order: 1;
+        justify-items: flex-end;
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+
+    .toggle {
+        justify-content: flex-start;
+    }
+
+    .card {
+        flex-grow: 1;
+    }
+
+    .discount {
+        text-align: right;
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        margin: 0 auto;
+        width: 1200px;
+    }
+    .description {
+        padding-left: 5rem;
+        
+    }
+}
+
+/* Inspired by https://codepen.io/ig_design/full/ExjyopQ */
